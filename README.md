@@ -4,16 +4,11 @@ Unofficial client for AdvisoryWorld API
 ## Features
 - AdvisoryWorld Authentication
 - Proposal Coverage
+  - /proposal/list
 
 ### Dependencies
 - RestSharp
 - SimpleJson
-
-### WIP
-- General Request Properties (POST)
-  - filtering
-  - sort
-  - userId
 
 ### Unit Testing
 - Add App.config AdvisoryWorldClient.Test
