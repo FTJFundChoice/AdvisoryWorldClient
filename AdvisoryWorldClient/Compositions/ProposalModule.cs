@@ -12,18 +12,11 @@ namespace AdvisoryWorldClient.Compositions {
             this.client = client;
         }
 
-        public List<Proposal> List() {
-            AWRequest req = new AWRequest();
-            req.Paging = new Paging {
-                Items = 100,
-                ItemsOnPage = 10,
-                Page = 1
-            };
-
+        public List<Proposal> List(AWRequest parameters) {
             var request = new RestRequest("/proposal/list ", Method.POST);
             request.AddHeader("Accept", "application/json");
             request.Parameters.Clear();
-            request.AddParameter("application/json", SimpleJson.SerializeObject(req), ParameterType.RequestBody);
+            request.AddParameter("application/json", SimpleJson.SerializeObject(parameters, SimpleJson.DataContractJsonSerializerStrategy), ParameterType.RequestBody);
 
             var result = client.Execute<AWRequest<Proposal>>(request);
             return result.Data.Items;

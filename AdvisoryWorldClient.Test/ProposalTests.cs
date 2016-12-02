@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using AdvisoryWorldClient.Model;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AdvisoryWorldClient.Test {
 
@@ -7,9 +8,15 @@ namespace AdvisoryWorldClient.Test {
 
         [TestMethod]
         public void List() {
-            var result = Client.Proposal.List();
+            AWRequest awr = new AWRequest();
+            awr.Paging = new Paging {
+                ItemsOnPage = 10,
+                Page = 1
+            };
+
+            var result = Client.Proposal.List(awr);
             Assert.IsNotNull(result);
-            Assert.AreNotEqual(0, result.Count);
+            Assert.AreEqual(10, result.Count);
         }
     }
 }

@@ -1,3 +1,12 @@
+﻿/*
+    This version is pulled from here
+    https://github.com/Lakritzator/simple-json/blob/6e1eccbe12717e983f6bdfb871ae45dc4929fe8b/src/SimpleJson/SimpleJson.cs
+    and supports the EmitDefaultValue DataMemeber property which is
+    required for AdvisoryWorld API and is not yet merged into the master branch.
+    Review master branch of https://github.com/facebook-csharp-sdk/simple-json
+    later for more merging. DO NOT USE NUGET VERSION.
+*/
+
 //-----------------------------------------------------------------------
 // <copyright file="SimpleJson.cs" company="The Outercurve Foundation">
 //    Copyright (c) 2011, The Outercurve Foundation.
@@ -17,7 +26,7 @@
 // <website>https://github.com/facebook-csharp-sdk/simple-json</website>
 //-----------------------------------------------------------------------
 
-// VERSION: 0.38.0
+// VERSION:
 
 // NOTE: uncomment the following line to make SimpleJson class internal.
 //#define SIMPLE_JSON_INTERNAL
@@ -29,7 +38,7 @@
 //#define SIMPLE_JSON_DYNAMIC
 
 // NOTE: uncomment the following line to enable DataContract support.
-#define SIMPLE_JSON_DATACONTRACT
+//#define SIMPLE_JSON_DATACONTRACT
 
 // NOTE: uncomment the following line to enable IReadOnlyCollection<T> and IReadOnlyList<T> support.
 //#define SIMPLE_JSON_READONLY_COLLECTIONS
@@ -65,7 +74,9 @@ using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 
 #if SIMPLE_JSON_DYNAMIC
+
 using System.Dynamic;
+
 #endif
 
 using System.Globalization;
@@ -329,6 +340,7 @@ namespace AdvisoryWorldClient {
         }
 
 #if SIMPLE_JSON_DYNAMIC
+
         /// <summary>
         /// Provides implementation for type conversion operations. Classes derived from the <see cref="T:System.Dynamic.DynamicObject"/> class can override this method to specify dynamic behavior for operations that convert an object from one type to another.
         /// </summary>
@@ -337,8 +349,7 @@ namespace AdvisoryWorldClient {
         /// <returns>
         /// Alwasy returns true.
         /// </returns>
-        public override bool TryConvert(ConvertBinder binder, out object result)
-        {
+        public override bool TryConvert(ConvertBinder binder, out object result) {
             // <pex>
             if (binder == null)
                 throw new ArgumentNullException("binder");
@@ -348,8 +359,7 @@ namespace AdvisoryWorldClient {
             if ((targetType == typeof(IEnumerable)) ||
                 (targetType == typeof(IEnumerable<KeyValuePair<string, object>>)) ||
                 (targetType == typeof(IDictionary<string, object>)) ||
-                (targetType == typeof(IDictionary)))
-            {
+                (targetType == typeof(IDictionary))) {
                 result = this;
                 return true;
             }
@@ -364,8 +374,7 @@ namespace AdvisoryWorldClient {
         /// <returns>
         /// Alwasy returns true.
         /// </returns>
-        public override bool TryDeleteMember(DeleteMemberBinder binder)
-        {
+        public override bool TryDeleteMember(DeleteMemberBinder binder) {
             // <pex>
             if (binder == null)
                 throw new ArgumentNullException("binder");
@@ -382,11 +391,9 @@ namespace AdvisoryWorldClient {
         /// <returns>
         /// Alwasy returns true.
         /// </returns>
-        public override bool TryGetIndex(GetIndexBinder binder, object[] indexes, out object result)
-        {
+        public override bool TryGetIndex(GetIndexBinder binder, object[] indexes, out object result) {
             if (indexes == null) throw new ArgumentNullException("indexes");
-            if (indexes.Length == 1)
-            {
+            if (indexes.Length == 1) {
                 result = ((IDictionary<string, object>)this)[(string)indexes[0]];
                 return true;
             }
@@ -402,11 +409,9 @@ namespace AdvisoryWorldClient {
         /// <returns>
         /// Alwasy returns true.
         /// </returns>
-        public override bool TryGetMember(GetMemberBinder binder, out object result)
-        {
+        public override bool TryGetMember(GetMemberBinder binder, out object result) {
             object value;
-            if (_members.TryGetValue(binder.Name, out value))
-            {
+            if (_members.TryGetValue(binder.Name, out value)) {
                 result = value;
                 return true;
             }
@@ -423,11 +428,9 @@ namespace AdvisoryWorldClient {
         /// <returns>
         /// true if the operation is successful; otherwise, false. If this method returns false, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.
         /// </returns>
-        public override bool TrySetIndex(SetIndexBinder binder, object[] indexes, object value)
-        {
+        public override bool TrySetIndex(SetIndexBinder binder, object[] indexes, object value) {
             if (indexes == null) throw new ArgumentNullException("indexes");
-            if (indexes.Length == 1)
-            {
+            if (indexes.Length == 1) {
                 ((IDictionary<string, object>)this)[(string)indexes[0]] = value;
                 return true;
             }
@@ -442,8 +445,7 @@ namespace AdvisoryWorldClient {
         /// <returns>
         /// true if the operation is successful; otherwise, false. If this method returns false, the run-time binder of the language determines the behavior. (In most cases, a language-specific run-time exception is thrown.)
         /// </returns>
-        public override bool TrySetMember(SetMemberBinder binder, object value)
-        {
+        public override bool TrySetMember(SetMemberBinder binder, object value) {
             // <pex>
             if (binder == null)
                 throw new ArgumentNullException("binder");
@@ -458,11 +460,11 @@ namespace AdvisoryWorldClient {
         /// <returns>
         /// A sequence that contains dynamic member names.
         /// </returns>
-        public override IEnumerable<string> GetDynamicMemberNames()
-        {
+        public override IEnumerable<string> GetDynamicMemberNames() {
             foreach (var key in Keys)
                 yield return key;
         }
+
 #endif
     }
 }
@@ -1156,9 +1158,13 @@ namespace AdvisoryWorldClient {
     public
 #endif
  class PocoJsonSerializerStrategy : IJsonSerializerStrategy {
+
+        public delegate bool EmitPredicate(object value);
+
         internal IDictionary<Type, ReflectionUtils.ConstructorDelegate> ConstructorCache;
         internal IDictionary<Type, IDictionary<string, ReflectionUtils.GetDelegate>> GetCache;
         internal IDictionary<Type, IDictionary<string, KeyValuePair<Type, ReflectionUtils.SetDelegate>>> SetCache;
+        protected internal IDictionary<Type, IDictionary<string, EmitPredicate>> EmitPredicateCache;
 
         internal static readonly Type[] EmptyTypes = new Type[0];
         internal static readonly Type[] ArrayConstructorParameterTypes = new Type[] { typeof(int) };
@@ -1178,6 +1184,10 @@ namespace AdvisoryWorldClient {
 
         protected virtual string MapClrMemberNameToJsonFieldName(string clrPropertyName) {
             return clrPropertyName;
+        }
+
+        internal virtual IDictionary<string, EmitPredicate> EmitPredicateFactory(Type type) {
+            return null;
         }
 
         internal virtual ReflectionUtils.ConstructorDelegate ContructorDelegateFactory(Type key) {
@@ -1384,9 +1394,17 @@ namespace AdvisoryWorldClient {
                 return false;
             IDictionary<string, object> obj = new JsonObject();
             IDictionary<string, ReflectionUtils.GetDelegate> getters = GetCache[type];
+            IDictionary<string, EmitPredicate> emitPredicate = EmitPredicateCache == null ? null : EmitPredicateCache[type];
             foreach (KeyValuePair<string, ReflectionUtils.GetDelegate> getter in getters) {
-                if (getter.Value != null)
-                    obj.Add(MapClrMemberNameToJsonFieldName(getter.Key), getter.Value(input));
+                if (getter.Value != null) {
+                    object value = getter.Value(input);
+                    if (emitPredicate != null && emitPredicate.ContainsKey(getter.Key) == true) {
+                        if (!emitPredicate[getter.Key](value)) {
+                            continue;
+                        }
+                    }
+                    obj.Add(MapClrMemberNameToJsonFieldName(getter.Key), value);
+                }
             }
             output = obj;
             return true;
@@ -1406,24 +1424,83 @@ namespace AdvisoryWorldClient {
         public DataContractJsonSerializerStrategy() {
             GetCache = new ReflectionUtils.ThreadSafeDictionary<Type, IDictionary<string, ReflectionUtils.GetDelegate>>(GetterValueFactory);
             SetCache = new ReflectionUtils.ThreadSafeDictionary<Type, IDictionary<string, KeyValuePair<Type, ReflectionUtils.SetDelegate>>>(SetterValueFactory);
+            EmitPredicateCache = new ReflectionUtils.ThreadSafeDictionary<Type, IDictionary<string, EmitPredicate>>(EmitPredicateFactory);
+        }
+
+        /// <summary>
+        /// Helper method to supply the name of the json key, either from the DataMemberAttribute or from the MemberInfo
+        /// </summary>
+        /// <param name="dataMemberAttribute">DataMemberAttribute</param>
+        /// <param name="memberInfo"></param>
+        /// <returns>string with the name in the Json</returns>
+        private string JsonKey(DataMemberAttribute dataMemberAttribute, MemberInfo memberInfo) {
+            return string.IsNullOrEmpty(dataMemberAttribute.Name) ? memberInfo.Name : dataMemberAttribute.Name;
+        }
+
+        /// <summary>
+        /// Create a default value for a type, this usually is "null" for reference type, but for other, e.g. bool it's false or for int it's 0
+        /// </summary>
+        /// <param name="type">Type to create a default for</param>
+        /// <returns>Default for type</returns>
+        private static object Default(Type type) {
+#if SIMPLE_JSON_TYPEINFO
+            if (type.GetTypeInfo().IsValueType)
+#else
+            if (type.IsValueType)
+#endif
+            {
+                return Activator.CreateInstance(type);
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Generate a cache with predicates which decides if the value needs to be emitted
+        /// Would have been nicer to integrate it into the getter, but this would mean more changes
+        /// </summary>
+        /// <param name="type"></param>
+        internal override IDictionary<string, EmitPredicate> EmitPredicateFactory(Type type) {
+            IDictionary<string, EmitPredicate> result = new Dictionary<string, EmitPredicate>();
+            DataContractAttribute dataContractAttribute = (DataContractAttribute)ReflectionUtils.GetAttribute(type, typeof(DataContractAttribute));
+            if (dataContractAttribute == null) {
+                return result;
+            }
+            foreach (PropertyInfo propertyInfo in ReflectionUtils.GetProperties(type)) {
+                DataMemberAttribute dataMemberAttribute;
+                if (CanAdd(propertyInfo, out dataMemberAttribute)) {
+                    string jsonKey = JsonKey(dataMemberAttribute, propertyInfo);
+                    if (dataMemberAttribute != null && dataMemberAttribute.EmitDefaultValue == false) {
+                        object def = Default(propertyInfo.PropertyType);
+                        result[jsonKey] = delegate (object value) { return !Equals(def, value); };
+                    }
+                }
+            }
+            return result;
         }
 
         internal override IDictionary<string, ReflectionUtils.GetDelegate> GetterValueFactory(Type type) {
-            bool hasDataContract = ReflectionUtils.GetAttribute(type, typeof(DataContractAttribute)) != null;
-            if (!hasDataContract)
+            DataContractAttribute dataContractAttribute = (DataContractAttribute)ReflectionUtils.GetAttribute(type, typeof(DataContractAttribute));
+            if (dataContractAttribute == null)
                 return base.GetterValueFactory(type);
+
             string jsonKey;
+            DataMemberAttribute dataMemberAttribute;
             IDictionary<string, ReflectionUtils.GetDelegate> result = new Dictionary<string, ReflectionUtils.GetDelegate>();
             foreach (PropertyInfo propertyInfo in ReflectionUtils.GetProperties(type)) {
                 if (propertyInfo.CanRead) {
                     MethodInfo getMethod = ReflectionUtils.GetGetterMethodInfo(propertyInfo);
-                    if (!getMethod.IsStatic && CanAdd(propertyInfo, out jsonKey))
+                    if (!getMethod.IsStatic && CanAdd(propertyInfo, out dataMemberAttribute)) {
+                        jsonKey = string.IsNullOrEmpty(dataMemberAttribute.Name) ? propertyInfo.Name : dataMemberAttribute.Name;
                         result[jsonKey] = ReflectionUtils.GetGetMethod(propertyInfo);
+                    }
                 }
             }
             foreach (FieldInfo fieldInfo in ReflectionUtils.GetFields(type)) {
-                if (!fieldInfo.IsStatic && CanAdd(fieldInfo, out jsonKey))
+                if (!fieldInfo.IsStatic && CanAdd(fieldInfo, out dataMemberAttribute)) {
+                    jsonKey = string.IsNullOrEmpty(dataMemberAttribute.Name) ? fieldInfo.Name : dataMemberAttribute.Name;
                     result[jsonKey] = ReflectionUtils.GetGetMethod(fieldInfo);
+                }
             }
             return result;
         }
@@ -1433,30 +1510,35 @@ namespace AdvisoryWorldClient {
             if (!hasDataContract)
                 return base.SetterValueFactory(type);
             string jsonKey;
+            DataMemberAttribute dataMemberAttribute;
             IDictionary<string, KeyValuePair<Type, ReflectionUtils.SetDelegate>> result = new Dictionary<string, KeyValuePair<Type, ReflectionUtils.SetDelegate>>();
             foreach (PropertyInfo propertyInfo in ReflectionUtils.GetProperties(type)) {
                 if (propertyInfo.CanWrite) {
                     MethodInfo setMethod = ReflectionUtils.GetSetterMethodInfo(propertyInfo);
-                    if (!setMethod.IsStatic && CanAdd(propertyInfo, out jsonKey))
+                    if (!setMethod.IsStatic && CanAdd(propertyInfo, out dataMemberAttribute)) {
+                        jsonKey = string.IsNullOrEmpty(dataMemberAttribute.Name) ? propertyInfo.Name : dataMemberAttribute.Name;
                         result[jsonKey] = new KeyValuePair<Type, ReflectionUtils.SetDelegate>(propertyInfo.PropertyType, ReflectionUtils.GetSetMethod(propertyInfo));
+                    }
                 }
             }
             foreach (FieldInfo fieldInfo in ReflectionUtils.GetFields(type)) {
-                if (!fieldInfo.IsInitOnly && !fieldInfo.IsStatic && CanAdd(fieldInfo, out jsonKey))
+                if (!fieldInfo.IsInitOnly && !fieldInfo.IsStatic && CanAdd(fieldInfo, out dataMemberAttribute)) {
+                    jsonKey = string.IsNullOrEmpty(dataMemberAttribute.Name) ? fieldInfo.Name : dataMemberAttribute.Name;
                     result[jsonKey] = new KeyValuePair<Type, ReflectionUtils.SetDelegate>(fieldInfo.FieldType, ReflectionUtils.GetSetMethod(fieldInfo));
+                }
             }
             // todo implement sorting for DATACONTRACT.
             return result;
         }
 
-        private static bool CanAdd(MemberInfo info, out string jsonKey) {
-            jsonKey = null;
+        private static bool CanAdd(MemberInfo info, out DataMemberAttribute dataMemberAttribute) {
+            dataMemberAttribute = null;
+
             if (ReflectionUtils.GetAttribute(info, typeof(IgnoreDataMemberAttribute)) != null)
                 return false;
-            DataMemberAttribute dataMemberAttribute = (DataMemberAttribute)ReflectionUtils.GetAttribute(info, typeof(DataMemberAttribute));
+            dataMemberAttribute = (DataMemberAttribute)ReflectionUtils.GetAttribute(info, typeof(DataMemberAttribute));
             if (dataMemberAttribute == null)
                 return false;
-            jsonKey = string.IsNullOrEmpty(dataMemberAttribute.Name) ? info.Name : dataMemberAttribute.Name;
             return true;
         }
     }

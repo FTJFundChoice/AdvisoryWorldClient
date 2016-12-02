@@ -5,6 +5,6 @@ namespace AdvisoryWorldClient.Interfaces {
 
     public interface IProposalModule {
 
-        List<Proposal> List();
+        List<Proposal> List(AWRequest parameters);
     }
 }
