@@ -1,14 +1,15 @@
-# AdvisoryWorldClient
+# Unofficial AdvisoryWorld API C# Client
 Client for AdvisoryWorld API
+
+## Features
+- AdvisoryWorld Authentication
 
 ### Dependencies
 - RestSharp
+- SimpleJson
 
-### To Do
-- Automatic Authenticate with Retry
+### WIP
 - General Request Properties (POST)
-  - paging
   - filtering
   - sort
   - userId
-- Models
