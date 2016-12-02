@@ -3,6 +3,7 @@ Client for AdvisoryWorld API
 
 ## Features
 - AdvisoryWorld Authentication
+- Proposal Coverage
 
 ### Dependencies
 - RestSharp
