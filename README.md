@@ -1,5 +1,5 @@
 # Unofficial AdvisoryWorld API C# Client
-Client for AdvisoryWorld API
+Unofficial client for AdvisoryWorld API
 
 ## Features
 - AdvisoryWorld Authentication
