@@ -1,0 +1,12 @@
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\AdvisoryWorldClient.dll.config
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\AdvisoryWorldClient.dll
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\AdvisoryWorldClient.pdb
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\AdvisoryWorldClient.Model.dll
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\AdvisoryWorldClient.Model.pdb
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\obj\Debug\AdvisoryWorldClient.csprojResolveAssemblyReference.cache
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\obj\Debug\AdvisoryWorldClient.dll
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\obj\Debug\AdvisoryWorldClient.pdb
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\Newtonsoft.Json.dll
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\AutoMapper.dll
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\AutoMapper.xml

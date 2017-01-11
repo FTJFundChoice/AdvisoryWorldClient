@@ -1,0 +1,6 @@
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\AdvisoryWorldClient.Model.dll.config
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\AdvisoryWorldClient.Model.dll
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\AdvisoryWorldClient.Model.pdb
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\AdvisoryWorldClient.Model.dll
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\AdvisoryWorldClient.Model.pdb
+C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\AdvisoryWorldClient.Model.csprojResolveAssemblyReference.cache
