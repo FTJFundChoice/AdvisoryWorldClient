@@ -25,7 +25,7 @@ namespace AdvisoryWorldClient.Model {
         public int Accounts { get; set; }
 
         [DataMember(Name = "value")]
-        public decimal Value { get; set; } // TODO: Should this be decimal?
+        public decimal Value { get; set; } 
 
         [DataMember(Name = "dateCreated")]
         public DateTime DateCreated { get; set; }
