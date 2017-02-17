@@ -1,4 +1,5 @@
 ﻿using AdvisoryWorldClient.Model;
+using AdvisoryWorldClient.Model.Proposal;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

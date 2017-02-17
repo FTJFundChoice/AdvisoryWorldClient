@@ -31,8 +31,9 @@ namespace AdvisoryWorldClient.RestApiCalls
         {
             var viewModel = await RestHelpers.SubmitPostRequestWithCookiesAsync(
                 $"{BaseUrl}{relativeUrl}", stringContent, this);
-            return JsonConvert.DeserializeObject<T>(
-                await viewModel.Response.Content.ReadAsStringAsync());
+
+            var rawResult = await viewModel.Response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<T>(rawResult);
 
         }
         public bool IsAuthenticated => Cookie != null;

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using AdvisoryWorldClient.Interfaces;
 using AdvisoryWorldClient.Model;
+using AdvisoryWorldClient.Model.Proposal;
 using AdvisoryWorldClient.RestApiCalls;
 
 namespace AdvisoryWorldClient.Compositions

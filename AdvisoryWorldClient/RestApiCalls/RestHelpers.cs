@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AdvisoryWorldClient.Model;
 using Newtonsoft.Json;
+using AdvisoryWorldClient.Model.Theme;
 
 namespace AdvisoryWorldClient.RestApiCalls
 {
@@ -41,9 +42,9 @@ namespace AdvisoryWorldClient.RestApiCalls
             return new StringContent(json, Encoding.UTF8, "application/json");
         }
 
-        public static StringContent CreateStringContent(AWRequest parameters)
+        public static StringContent CreateStringContent<T>(T parameters)
         {
-            return new StringContent(JsonConvert.SerializeObject(parameters), Encoding.UTF8, "application/json");
+            return new StringContent(JsonConvert.SerializeObject(parameters, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore}), Encoding.UTF8, "application/json");
         }
 
     }
