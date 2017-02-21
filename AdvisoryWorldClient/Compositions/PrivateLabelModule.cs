@@ -26,9 +26,16 @@ namespace FTJFundChoice.AdvisoryWorldClient.Compositions
                 }
             }
 
-            var results =  await _client.GetDataAsync<RestPostResponse>("user/private-label/save", RestHelpers.CreateStringContent(parameters));
+            try
+            {
+                var results = await _client.GetDataAsync<RestPostResponse>("user/private-label/save", RestHelpers.CreateStringContent(parameters));
+                return results;
+            }
+            catch (Exception ex)
+            {
 
-            return results;
+                throw ex;
+            }
         }
     }
 }
