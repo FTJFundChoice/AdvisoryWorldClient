@@ -2,10 +2,11 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using FTJFundChoice.AdvisoryWorldClient.Interfaces;
 
 namespace FTJFundChoice.AdvisoryWorldClient.RestApiCalls
 {
-    public class Client
+    public class Client: IClient
     {
         public readonly string BaseUrl;
         public readonly string Username;

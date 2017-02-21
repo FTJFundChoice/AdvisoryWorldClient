@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>FTJFundChoice.AdvisoryWorldClient</id>
-    <version>0.0.3-beta</version>
+    <version>0.0.4-beta</version>
     <authors>Brian Bland, Brian Seabolt</authors>
     <owners>FTJ Fund Choice</owners>
     <licenseUrl>https://github.com/FTJFundChoice/AdvisoryWorldClient</licenseUrl>

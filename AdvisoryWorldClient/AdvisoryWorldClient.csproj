@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Compositions\PrivateLabelModule.cs" />
     <Compile Include="Compositions\UserModule.cs" />
+    <Compile Include="Interfaces\IClient.cs" />
     <Compile Include="Interfaces\IPrivateLabelModule.cs" />
     <Compile Include="Interfaces\IUserModule.cs" />
     <Compile Include="RestApiCalls\Client.cs" />
