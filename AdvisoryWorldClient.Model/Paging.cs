@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AdvisoryWorldClient.Model {
+namespace FTJFundChoice.AdvisoryWorldClient.Model {
 
     [DataContract(Name = "paging")]
     public class Paging {

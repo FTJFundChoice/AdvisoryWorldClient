@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace AdvisoryWorldClient.Model {
+namespace FTJFundChoice.AdvisoryWorldClient.Model {
     public class SleeveStrategySaveAll {
         [JsonProperty("name")]
         public string Name { get; set; }

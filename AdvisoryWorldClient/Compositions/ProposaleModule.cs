@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AdvisoryWorldClient.Interfaces;
-using AdvisoryWorldClient.Model;
-using AdvisoryWorldClient.Model.Proposal;
-using AdvisoryWorldClient.RestApiCalls;
+using FTJFundChoice.AdvisoryWorldClient.Interfaces;
+using FTJFundChoice.AdvisoryWorldClient.Model;
+using FTJFundChoice.AdvisoryWorldClient.Model.Proposal;
+using FTJFundChoice.AdvisoryWorldClient.RestApiCalls;
 
-namespace AdvisoryWorldClient.Compositions
+namespace FTJFundChoice.AdvisoryWorldClient.Compositions
 {
     public class ProposaleModule : IProposalModule
     {

@@ -1,7 +1,7 @@
-﻿using AdvisoryWorldClient.Compositions;
-using AdvisoryWorldClient.Model.Security;
-using AdvisoryWorldClient.RestApiCalls;
-using AdvisoryWorldClient.Test._base;
+﻿using FTJFundChoice.AdvisoryWorldClient.Compositions;
+using FTJFundChoice.AdvisoryWorldClient.Model.Security;
+using FTJFundChoice.AdvisoryWorldClient.RestApiCalls;
+using FTJFundChoice.AdvisoryWorldClient.Test._base;
 using System.IO;
 using Xunit;
 

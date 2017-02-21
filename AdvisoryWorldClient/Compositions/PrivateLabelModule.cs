@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
-using AdvisoryWorldClient.RestApiCalls;
+using FTJFundChoice.AdvisoryWorldClient.RestApiCalls;
 
-using AdvisoryWorldClient.Interfaces;
-using AdvisoryWorldClient.Model.Theme;
+using FTJFundChoice.AdvisoryWorldClient.Interfaces;
+using FTJFundChoice.AdvisoryWorldClient.Model.Theme;
 
-namespace AdvisoryWorldClient.Compositions
+namespace FTJFundChoice.AdvisoryWorldClient.Compositions
 {
     public class PrivateLabelModule : IPrivateLabelModule
     {

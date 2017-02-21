@@ -28,10 +28,14 @@ D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\AdvisoryWorldClient.Test.dll.config
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\AdvisoryWorldClient.Test.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\AdvisoryWorldClient.Test.pdb
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\FTJFundChoice.AdvisoryWorldClient.dll
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.assert.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.core.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.execution.desktop.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\Newtonsoft.Json.dll
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.pdb
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\FTJFundChoice.AdvisoryWorldClient.pdb
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.assert.pdb
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.assert.xml
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.core.pdb
@@ -42,7 +46,3 @@ D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\obj\Debug\AdvisoryWorldClient.Test.csprojResolveAssemblyReference.cache
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\obj\Debug\AdvisoryWorldClient.Test.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\obj\Debug\AdvisoryWorldClient.Test.pdb
-D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\FTJFundChoice.AdvisoryWorldClient.dll
-D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll
-D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.pdb
-D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\FTJFundChoice.AdvisoryWorldClient.pdb

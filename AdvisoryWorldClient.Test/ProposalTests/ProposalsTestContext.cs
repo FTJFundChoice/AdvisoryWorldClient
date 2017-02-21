@@ -1,8 +1,8 @@
 ﻿
-using AdvisoryWorldClient.Compositions;
-using AdvisoryWorldClient.Model;
-using AdvisoryWorldClient.RestApiCalls;
-using AdvisoryWorldClient.Test._base;
+using FTJFundChoice.AdvisoryWorldClient.Compositions;
+using FTJFundChoice.AdvisoryWorldClient.Model;
+using FTJFundChoice.AdvisoryWorldClient.RestApiCalls;
+using FTJFundChoice.AdvisoryWorldClient.Test._base;
 using Xunit;
 
 namespace AdvisoryWorldClient.Test.ProposalTests

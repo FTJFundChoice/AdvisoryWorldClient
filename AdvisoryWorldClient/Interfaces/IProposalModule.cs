@@ -1,9 +1,9 @@
-﻿using AdvisoryWorldClient.Model;
-using AdvisoryWorldClient.Model.Proposal;
+﻿using FTJFundChoice.AdvisoryWorldClient.Model;
+using FTJFundChoice.AdvisoryWorldClient.Model.Proposal;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace AdvisoryWorldClient.Interfaces
+namespace FTJFundChoice.AdvisoryWorldClient.Interfaces
 {
     public interface IProposalModule
     {

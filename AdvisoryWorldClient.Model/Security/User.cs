@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace AdvisoryWorldClient.Model.Security {
+namespace FTJFundChoice.AdvisoryWorldClient.Model.Security {
     public class User : Base.BaseResponse {
         [JsonProperty("id")]
         public int Id { get; set; }

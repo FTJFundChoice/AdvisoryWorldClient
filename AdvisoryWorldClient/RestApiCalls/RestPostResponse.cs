@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace AdvisoryWorldClient.RestApiCalls
+namespace FTJFundChoice.AdvisoryWorldClient.RestApiCalls
 {
     public class RestPostResponse
     {

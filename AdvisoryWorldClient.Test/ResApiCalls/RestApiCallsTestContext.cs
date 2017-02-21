@@ -1,8 +1,8 @@
-﻿using AdvisoryWorldClient.RestApiCalls;
-using AdvisoryWorldClient.Test._base;
+﻿using FTJFundChoice.AdvisoryWorldClient.RestApiCalls;
+using FTJFundChoice.AdvisoryWorldClient.Test._base;
 using Xunit;
 
-namespace AdvisoryWorldClient.Test.ResApiCalls
+namespace FTJFundChoice.AdvisoryWorldClient.Test.ResApiCalls
 {
     [Collection("Authentication")]
     public class RestApiCallsTestContext : TestBase

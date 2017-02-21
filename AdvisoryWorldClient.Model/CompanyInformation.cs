@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace AdvisoryWorldClient.Model {
+namespace FTJFundChoice.AdvisoryWorldClient.Model {
     public class CompanyInformation {
         [JsonProperty("aboutCompany")]
         public string AboutCompany { get; set; }

@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace AdvisoryWorldClient.RestApiCalls
+namespace FTJFundChoice.AdvisoryWorldClient.RestApiCalls
 {
     public class Client
     {

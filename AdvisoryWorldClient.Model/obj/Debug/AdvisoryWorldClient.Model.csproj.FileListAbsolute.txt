@@ -4,10 +4,10 @@ C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\AdvisoryWo
 C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\AdvisoryWorldClient.Model.dll
 C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\AdvisoryWorldClient.Model.pdb
 C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\AdvisoryWorldClient.Model.csprojResolveAssemblyReference.cache
-D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\Newtonsoft.Json.dll
-D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\Newtonsoft.Json.xml
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll.config
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.pdb
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\Newtonsoft.Json.dll
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\Newtonsoft.Json.xml
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\FTJFundChoice.AdvisoryWorldClient.Model.pdb

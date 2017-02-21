@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvisoryWorldClient.Model.Proposal
+namespace FTJFundChoice.AdvisoryWorldClient.Model.Proposal
 {
     public class ProposalItems: Base.BaseResponse {
         [JsonProperty("items")]

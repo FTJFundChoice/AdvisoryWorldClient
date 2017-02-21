@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace AdvisoryWorldClient.Model.Theme {
+namespace FTJFundChoice.AdvisoryWorldClient.Model.Theme {
     public class PrivateLabel {
         public PrivateLabel() {
             Colors = new Colors();

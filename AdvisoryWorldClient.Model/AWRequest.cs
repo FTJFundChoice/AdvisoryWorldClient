@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace AdvisoryWorldClient.Model {
+namespace FTJFundChoice.AdvisoryWorldClient.Model {
 
     [DataContract]
     public class AWRequest {

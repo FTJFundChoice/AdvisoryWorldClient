@@ -1,8 +1,8 @@
 using System;
 using System.Configuration;
-using AdvisoryWorldClient.RestApiCalls;
+using FTJFundChoice.AdvisoryWorldClient.RestApiCalls;
 
-namespace AdvisoryWorldClient.Test._base
+namespace FTJFundChoice.AdvisoryWorldClient.Test._base
 {
     public abstract class TestBase : IDisposable
     {

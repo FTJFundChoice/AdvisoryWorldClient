@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvisoryWorldClient.Model.Security
+namespace FTJFundChoice.AdvisoryWorldClient.Model.Security
 {
     public class Users {
         [JsonProperty("items")]

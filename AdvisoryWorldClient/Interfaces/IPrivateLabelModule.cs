@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
-using AdvisoryWorldClient.RestApiCalls;
+using FTJFundChoice.AdvisoryWorldClient.RestApiCalls;
 
-using AdvisoryWorldClient.Model.Theme;
+using FTJFundChoice.AdvisoryWorldClient.Model.Theme;
 
-namespace AdvisoryWorldClient.Interfaces
+namespace FTJFundChoice.AdvisoryWorldClient.Interfaces
 {
     public interface IPrivateLabelModule
     {

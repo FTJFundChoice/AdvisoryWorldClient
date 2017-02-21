@@ -1,7 +1,7 @@
 ﻿
 using Newtonsoft.Json;
 
-namespace AdvisoryWorldClient.Model {
+namespace FTJFundChoice.AdvisoryWorldClient.Model {
     public class SleeveStrategySaveAllAssets {
         [JsonProperty("allocation")]
         public decimal Allocation { get; set; }

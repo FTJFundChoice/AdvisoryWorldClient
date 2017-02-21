@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace AdvisoryWorldClient.Model.Security
+namespace FTJFundChoice.AdvisoryWorldClient.Model.Security
 {
     public class UserCredentials
     {

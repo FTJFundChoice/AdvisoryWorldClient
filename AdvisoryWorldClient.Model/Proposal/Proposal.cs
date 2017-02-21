@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace AdvisoryWorldClient.Model.Proposal
+namespace FTJFundChoice.AdvisoryWorldClient.Model.Proposal
 {
 
     [DataContract]

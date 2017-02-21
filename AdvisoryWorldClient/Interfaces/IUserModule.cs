@@ -1,12 +1,12 @@
-﻿using AdvisoryWorldClient.Model.Security;
-using AdvisoryWorldClient.RestApiCalls;
+﻿using FTJFundChoice.AdvisoryWorldClient.Model.Security;
+using FTJFundChoice.AdvisoryWorldClient.RestApiCalls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdvisoryWorldClient.Interfaces
+namespace FTJFundChoice.AdvisoryWorldClient.Interfaces
 {
     public interface IUserModule
     {

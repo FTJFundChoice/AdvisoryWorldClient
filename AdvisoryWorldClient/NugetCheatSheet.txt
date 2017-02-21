@@ -1,0 +1,8 @@
+Step 1: Build as "release"
+Step 2: Update .nuspec document with version number and description
+Step 3: Command Line
+	A: dive into the directory
+	B: run the following:
+		nuget pack AdvisoryWorldClient.csproj -IncludeReferencedProjects -properties Configuration=Release
+	C: run the following, replacing [XXX] with the version number: 
+		nuget push FTJFundChoice.AdvisoryWorldClient.[XXX].nupkg -source https://www.nuget.org/api/v2/package

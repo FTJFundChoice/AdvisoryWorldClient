@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 
-namespace AdvisoryWorldClient.RestApiCalls
+namespace FTJFundChoice.AdvisoryWorldClient.RestApiCalls
 {
     public class RestCallResultsViewModel
     {

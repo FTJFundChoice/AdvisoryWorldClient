@@ -5,11 +5,11 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using AdvisoryWorldClient.Model;
+using FTJFundChoice.AdvisoryWorldClient.Model;
 using Newtonsoft.Json;
-using AdvisoryWorldClient.Model.Theme;
+using FTJFundChoice.AdvisoryWorldClient.Model.Theme;
 
-namespace AdvisoryWorldClient.RestApiCalls
+namespace FTJFundChoice.AdvisoryWorldClient.RestApiCalls
 {
     public static class RestHelpers
     {
