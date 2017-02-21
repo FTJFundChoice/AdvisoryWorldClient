@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>FTJFundChoice.AdvisoryWorldClient</id>
+    <version>0.0.1</version>
+    <authors>Brian Bland, Brian Seabolt</authors>
+    <owners>FTJ Fund Choice</owners>
+    <licenseUrl>https://github.com/FTJFundChoice/AdvisoryWorldClient</licenseUrl>
+    <projectUrl>https://github.com/FTJFundChoice/AdvisoryWorldClient</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Unofficial AdvisoryWorld API C# Client</description>
+    <releaseNotes>Initial Release of the Unofficial AdvisoryWorld API C# Client</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>FTJ FundChoice</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
+	  <dependency id="System.Net.Http" version="4.3.0" />
+	  <dependency id="AutoMapper" version="5.2.0" />	 
+    </dependencies>
+  </metadata>
+</package>

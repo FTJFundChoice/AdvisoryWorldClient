@@ -7,8 +7,8 @@
     <ProjectGuid>{5DB93BC5-D24B-4691-8DE6-F0E9F934EC3A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AdvisoryWorldClient.Model</RootNamespace>
-    <AssemblyName>AdvisoryWorldClient.Model</AssemblyName>
+    <RootNamespace>FTJFundChoice.AdvisoryWorldClient.Model</RootNamespace>
+    <AssemblyName>FTJFundChoice.AdvisoryWorldClient.Model</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

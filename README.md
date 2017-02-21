@@ -1,14 +1,20 @@
 # Unofficial AdvisoryWorld API C# Client
 Unofficial client for AdvisoryWorld API
 
+- Please note this is in an Alpha, unstable release. 
+
 ## Features
 - AdvisoryWorld Authentication
 - Proposal Coverage
   - /proposal/list
+- User Management Coverage
+  - /users/themes
+  - /user security
 
 ### Dependencies
-- RestSharp
-- SimpleJson
+- System.Het.Http
+- AutoMapper
+- NewtonSoft Json
 
 ### Unit Testing
 - Add App.config AdvisoryWorldClient.Test
