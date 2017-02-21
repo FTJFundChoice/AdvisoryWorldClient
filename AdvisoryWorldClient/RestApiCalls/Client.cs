@@ -6,7 +6,7 @@ using FTJFundChoice.AdvisoryWorldClient.Interfaces;
 
 namespace FTJFundChoice.AdvisoryWorldClient.RestApiCalls
 {
-    public class Client: IClient
+    public class Client : IClient
     {
         public readonly string BaseUrl;
         public readonly string Username;
@@ -37,7 +37,10 @@ namespace FTJFundChoice.AdvisoryWorldClient.RestApiCalls
             return JsonConvert.DeserializeObject<T>(rawResult);
 
         }
-        public bool IsAuthenticated => Cookie != null;
+        public bool IsAuthenticated()
+        {
+            return Cookie != null;
+        }
 
     }
 }

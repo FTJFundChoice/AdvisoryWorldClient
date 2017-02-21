@@ -18,7 +18,7 @@ namespace FTJFundChoice.AdvisoryWorldClient.Compositions
 
         public async Task<IList<Proposal>> GetListAsync(AWRequest parameters)
         {
-            if (!_client.IsAuthenticated)
+            if (!_client.IsAuthenticated())
             {
                 if (!await _client.AuthenticateAsync())
                 {

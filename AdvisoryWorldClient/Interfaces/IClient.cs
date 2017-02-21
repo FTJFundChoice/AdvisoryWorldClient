@@ -11,5 +11,7 @@ namespace FTJFundChoice.AdvisoryWorldClient.Interfaces
     {
         Task<bool> AuthenticateAsync();
         Task<T> GetDataAsync<T>(string relativeUrl, StringContent stringContent);
+
+        bool IsAuthenticated();
     }
 }

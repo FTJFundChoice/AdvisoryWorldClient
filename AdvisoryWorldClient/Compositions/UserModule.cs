@@ -10,9 +10,9 @@ namespace FTJFundChoice.AdvisoryWorldClient.Compositions
 {
     public class UserModule : IUserModule
     {
-        private readonly Client _client;
+        private readonly IClient _client;
 
-        public UserModule(Client client)
+        public UserModule(IClient client)
         {
             _client = client;
         }
@@ -33,7 +33,7 @@ namespace FTJFundChoice.AdvisoryWorldClient.Compositions
 
         public async Task<T> SubmitUserCredentialData<T>(string relativeUrl, UserCredentialWrapper parameters)
         {
-            if (!_client.IsAuthenticated)
+            if (!_client.IsAuthenticated())
             {
                 if (!await _client.AuthenticateAsync())
                 {

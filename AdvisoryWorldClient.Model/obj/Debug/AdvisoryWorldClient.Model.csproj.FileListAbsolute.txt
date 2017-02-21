@@ -11,4 +11,3 @@ D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\bi
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\Newtonsoft.Json.xml
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\FTJFundChoice.AdvisoryWorldClient.Model.pdb
-D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\AdvisoryWorldClient.Model.csprojResolveAssemblyReference.cache

@@ -9,16 +9,16 @@ namespace FTJFundChoice.AdvisoryWorldClient.Compositions
 {
     public class PrivateLabelModule : IPrivateLabelModule
     {
-        private readonly Client _client;
+        private readonly IClient _client;
 
-        public PrivateLabelModule(Client client)
+        public PrivateLabelModule(IClient client)
         {
             _client = client;
         }
 
         public async Task<RestPostResponse> SubmitPrivateLabelData(PrivateLabel parameters)
         {
-            if (!_client.IsAuthenticated)
+            if (!_client.IsAuthenticated())
             {
                 if (!await _client.AuthenticateAsync())
                 {
