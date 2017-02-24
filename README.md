@@ -25,6 +25,10 @@ Unofficial client for AdvisoryWorld API
     <add key="apiUrl" value="[API_URL]" />
     <add key="username" value="[API_USERNAME]" />
     <add key="password" value="[API_PASSWORD]" />
+	<add key="Name" value="[Name]"/>
+    <add key="UserId" value="[UserId]"/>
+    <add key="Value" value="[Value]"/>
+    <add key="UserCredentialId" value="[UserCredentialId]"/>
   </appSettings>
 </configuration>
 ```

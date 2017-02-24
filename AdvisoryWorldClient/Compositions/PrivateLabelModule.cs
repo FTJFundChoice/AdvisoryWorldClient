@@ -33,7 +33,6 @@ namespace FTJFundChoice.AdvisoryWorldClient.Compositions
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }

@@ -17,6 +17,7 @@ D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debu
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\Newtonsoft.Json.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.pdb
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll.config
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\AutoMapper.xml
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debug\Newtonsoft.Json.xml
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\obj\Debug\AdvisoryWorldClient.csprojResolveAssemblyReference.cache

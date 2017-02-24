@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="AWRequest.cs" />
     <Compile Include="Security\UserCredentials.cs" />
+    <Compile Include="Security\UserCriteria.cs" />
     <Compile Include="Theme\BackgroundColors.cs" />
     <Compile Include="Theme\BarChartColors.cs" />
     <Compile Include="Base\BaseResponse.cs" />

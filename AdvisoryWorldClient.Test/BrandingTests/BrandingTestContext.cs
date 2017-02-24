@@ -23,9 +23,9 @@ namespace AdvisoryWorldClient.Test.BrandingTests
             privateLabel.Colors.Theme.Color5 = "#FFFFFF";
 
 
-            privateLabel.Info.AboutCompany = "Ninjas are awesome!";
-            privateLabel.Info.Thumbnail = File.ReadAllBytes(@"C:\temp\goggles2.jpg");
-            privateLabel.Info.UserImage = File.ReadAllBytes(@"C:\temp\Hot-Toys-Death-Trooper.jpg");
+            privateLabel.Info.AboutCompany = "testing some stuff!";
+            privateLabel.Info.Thumbnail = File.ReadAllBytes(@"C:\temp\cats_static.jpg");
+            privateLabel.Info.UserImage = File.ReadAllBytes(@"C:\temp\fear-is-the-mind-killer.jpg");
 
 
             var client = new Client(BaseUrl, Username, Password);

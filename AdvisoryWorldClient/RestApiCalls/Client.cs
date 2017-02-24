@@ -23,7 +23,7 @@ namespace FTJFundChoice.AdvisoryWorldClient.RestApiCalls
         public async Task<bool> AuthenticateAsync()
         {
             var viewModel = await RestHelpers.SubmitPostRequestWithCookiesAsync(
-                $"{BaseUrl}/auth?login={Username}&password={Password}", null);
+                $"{BaseUrl}auth?login={Username}&password={Password}", null);
             Cookie = RestHelpers.GetCookieValue(viewModel, "JSESSIONID");
             return Cookie != null;
         }

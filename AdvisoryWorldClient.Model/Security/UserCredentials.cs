@@ -14,4 +14,10 @@ namespace FTJFundChoice.AdvisoryWorldClient.Model.Security
             Credentials = new List<UserCredential>();
         }
     }
+
+    public class UserCredentialsWrapper
+    {
+        [JsonProperty("userCredentials")]
+        public UserCredentials userCredentials { get; set; }
+    }
 }
