@@ -24,8 +24,8 @@ namespace AdvisoryWorldClient.Test.BrandingTests
 
 
             privateLabel.Info.AboutCompany = "testing some stuff!";
-            privateLabel.Info.Thumbnail = File.ReadAllBytes(@"C:\temp\cats_static.jpg");
-            privateLabel.Info.UserImage = File.ReadAllBytes(@"C:\temp\fear-is-the-mind-killer.jpg");
+            privateLabel.Info.Thumbnail = File.ReadAllBytes(@"Images\What_business_to_start_2013_crop.jpg");
+            privateLabel.Info.UserImage = File.ReadAllBytes(@"Images\startup.jpg");
 
 
             var client = new Client(BaseUrl, Username, Password);
