@@ -14,7 +14,7 @@ namespace AdvisoryWorldClient.Test.BrandingTests
         public async void ShouldUpdatePrivateLabelDetails()
         {
             var privateLabel = new PrivateLabel() {};
-            privateLabel.UserId = 7954;
+            privateLabel.UserId = 25772;
 
             privateLabel.Colors.Theme.Color1 = "#650000";
             privateLabel.Colors.Theme.Color2 = "#00E500";
@@ -32,6 +32,28 @@ namespace AdvisoryWorldClient.Test.BrandingTests
             Assert.True(await client.AuthenticateAsync());
             var pl = new PrivateLabelModule(client);
             var result = await pl.SubmitPrivateLabelData(privateLabel);
+            Assert.NotNull(result);
+            Assert.Equal(result.Success, "true");
+        }
+
+        [Fact]
+        public async void ShouldRemoveCompanyImage()
+        {
+            var client = new Client(BaseUrl, Username, Password);
+            Assert.True(await client.AuthenticateAsync());
+            var pl = new PrivateLabelModule(client);
+            var result = await pl.DeleteLogo(25772);
+            Assert.NotNull(result);
+            Assert.Equal(result.Success, "true");
+        }
+
+        [Fact]
+        public async void ShouldRemoveCompanyColors()
+        {
+            var client = new Client(BaseUrl, Username, Password);
+            Assert.True(await client.AuthenticateAsync());
+            var pl = new PrivateLabelModule(client);
+            var result = await pl.DeleteColors(25772);
             Assert.NotNull(result);
             Assert.Equal(result.Success, "true");
         }

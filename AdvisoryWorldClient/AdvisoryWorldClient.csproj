@@ -59,6 +59,7 @@
     <Compile Include="RestApiCalls\Client.cs" />
     <Compile Include="Compositions\ProposaleModule.cs" />
     <Compile Include="RestApiCalls\RestCallResultsViewModel.cs" />
+    <Compile Include="RestApiCalls\RestGetResponse.cs" />
     <Compile Include="RestApiCalls\RestHelpers.cs" />
     <Compile Include="Interfaces\IProposalModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

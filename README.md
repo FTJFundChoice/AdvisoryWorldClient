@@ -1,8 +1,6 @@
 # Unofficial AdvisoryWorld API C# Client
 Unofficial client for AdvisoryWorld API
 
-- Please note this is in an Alpha, unstable release. 
-
 ## Features
 - AdvisoryWorld Authentication
 - Proposal Coverage

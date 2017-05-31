@@ -22,10 +22,11 @@ C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.execu
 C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.execution.desktop.xml
 C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\Newtonsoft.Json.dll
 C:\GitHub\FTJ\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\Newtonsoft.Json.xml
-D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\obj\Debug\AdvisoryWorldClient.Test.csprojResolveAssemblyReference.cache
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.abstractions.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.runner.visualstudio.testadapter.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.runner.utility.desktop.dll
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\Images\startup.jpg
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\Images\What_business_to_start_2013_crop.jpg
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\AdvisoryWorldClient.Test.dll.config
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\AdvisoryWorldClient.Test.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\AdvisoryWorldClient.Test.pdb
@@ -46,7 +47,6 @@ D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.execution.desktop.pdb
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\xunit.execution.desktop.xml
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\Newtonsoft.Json.xml
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\obj\Debug\AdvisoryWorldClient.Test.csprojResolveAssemblyReference.cache
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\obj\Debug\AdvisoryWorldClient.Test.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\obj\Debug\AdvisoryWorldClient.Test.pdb
-D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\Images\startup.jpg
-D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin\Debug\Images\What_business_to_start_2013_crop.jpg
