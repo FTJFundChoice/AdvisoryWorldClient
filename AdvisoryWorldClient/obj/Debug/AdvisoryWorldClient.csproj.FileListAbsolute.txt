@@ -23,3 +23,4 @@ D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\bin\Debu
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\obj\Debug\AdvisoryWorldClient.csprojResolveAssemblyReference.cache
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\obj\Debug\FTJFundChoice.AdvisoryWorldClient.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\obj\Debug\FTJFundChoice.AdvisoryWorldClient.pdb
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient\obj\Debug\AdvisoryWorldClient.csproj.CoreCompileInputs.cache

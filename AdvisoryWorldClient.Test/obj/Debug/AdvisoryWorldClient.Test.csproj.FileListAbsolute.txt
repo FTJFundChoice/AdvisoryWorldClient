@@ -50,3 +50,4 @@ D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\bin
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\obj\Debug\AdvisoryWorldClient.Test.csprojResolveAssemblyReference.cache
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\obj\Debug\AdvisoryWorldClient.Test.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\obj\Debug\AdvisoryWorldClient.Test.pdb
+D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Test\obj\Debug\AdvisoryWorldClient.Test.csproj.CoreCompileInputs.cache
