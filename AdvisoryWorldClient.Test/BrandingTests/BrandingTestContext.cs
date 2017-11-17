@@ -58,5 +58,16 @@ namespace AdvisoryWorldClient.Test.BrandingTests
             Assert.Equal(result.Success, "true");
         }
 
+        [Fact]
+        public async void ShouldRemoveThumbnails()
+        {
+            var client = new Client(BaseUrl, Username, Password);
+            Assert.True(await client.AuthenticateAsync());
+            var pl = new PrivateLabelModule(client);
+            var result = await pl.DeleteThumbnail(25772);
+            Assert.NotNull(result);
+            Assert.Equal(result.Success, "true");
+        }
+
     }
 }

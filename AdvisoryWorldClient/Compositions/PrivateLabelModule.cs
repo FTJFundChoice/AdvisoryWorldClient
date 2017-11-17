@@ -78,5 +78,26 @@ namespace FTJFundChoice.AdvisoryWorldClient.Compositions
                 throw ex;
             }
         }
+
+        public async Task<RestGetResponse> DeleteThumbnail(int userId)
+        {
+            if (!_client.IsAuthenticated())
+            {
+                if (!await _client.AuthenticateAsync())
+                {
+                    throw new Exception("Unable to authenticate with Advisory World");
+                }
+            }
+
+            try
+            {
+                var results = await _client.GetDataAsync<RestGetResponse>($"user/{userId}/companyInfo/remove-thumbnail", RestHelpers.CreateStringContent(string.Empty));
+                return results;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

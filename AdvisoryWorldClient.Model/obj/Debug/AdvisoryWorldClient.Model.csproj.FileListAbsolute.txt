@@ -12,3 +12,11 @@ D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\bi
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\FTJFundChoice.AdvisoryWorldClient.Model.pdb
 D:\Code\FTJ\AdvisoryWorldClient\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\AdvisoryWorldClient.Model.csproj.CoreCompileInputs.cache
+C:\Users\brand\Documents\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll.config
+C:\Users\brand\Documents\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\brand\Documents\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\brand\Documents\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\AdvisoryWorldClient.Model.csproj.CoreCompileInputs.cache
+C:\Users\brand\Documents\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll
+C:\Users\brand\Documents\AdvisoryWorldClient\AdvisoryWorldClient.Model\obj\Debug\FTJFundChoice.AdvisoryWorldClient.Model.pdb
+C:\Users\brand\Documents\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.dll
+C:\Users\brand\Documents\AdvisoryWorldClient\AdvisoryWorldClient.Model\bin\Debug\FTJFundChoice.AdvisoryWorldClient.Model.pdb
