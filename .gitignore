@@ -3,3 +3,4 @@ obj\*
 .vs\*
 App.config
 packages\*
+/.vs/AdvisoryWorldClient/v15
