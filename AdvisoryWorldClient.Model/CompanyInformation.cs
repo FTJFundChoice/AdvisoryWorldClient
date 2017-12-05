@@ -10,7 +10,9 @@ namespace FTJFundChoice.AdvisoryWorldClient.Model {
         public byte [] FirmLogo { get; set; }
         [JsonProperty("thumbnail")]
         public byte[] Thumbnail { get; set; }
-        [JsonProperty("userImage")]
-        public byte[] UserImage { get; set; }
+
+        // REMOVED FROM THE API PER ADVISORY WORLD CHANGES, BMS 12/05/2017
+        //[JsonProperty("userImage")]
+        //public byte[] UserImage { get; set; }
     }
 }
