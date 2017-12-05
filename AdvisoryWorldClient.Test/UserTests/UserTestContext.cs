@@ -77,5 +77,17 @@ namespace AdvisoryWorldClient.Test.UserTests
 
         }
 
+        [Theory]
+        [InlineData("userId=1234")]
+        public async void GetUserContextBecauseSeaboltIsAmazing(string usrId)
+        {
+            var client = new Client(BaseUrl, Username, Password);
+            Assert.True(await client.AuthenticateAsync());
+            var um = new UserModule(client);
+            var result = await um.GetUserCredentialList(usrId);
+            Assert.NotNull(result);
+            Assert.NotEmpty(result.Credentials);
+        }
+
     }
 }

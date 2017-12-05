@@ -304,3 +304,17 @@ __pycache__/
 # OpenCover UI analysis results
 OpenCover/
 /FTJFundChoice.OrionClient.Test/App.config
+
+AdvisoryWorldClient\.Model/App\.config
+
+AdvisoryWorldClient\.Test/App\.config
+
+*.config
+
+AdvisoryWorldClient/obj/Debug/AdvisoryWorldClient\.csproj\.CoreCompileInputs\.cache
+
+AdvisoryWorldClient/obj/Debug/AdvisoryWorldClient\.csprojResolveAssemblyReference\.cache
+
+AdvisoryWorldClient/obj/Debug/DesignTimeResolveAssemblyReferencesInput\.cache
+
+AdvisoryWorldClient/obj/Debug/FTJFundChoice\.AdvisoryWorldClient\.dll

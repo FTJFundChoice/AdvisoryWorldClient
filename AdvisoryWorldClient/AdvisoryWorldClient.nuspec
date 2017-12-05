@@ -2,14 +2,14 @@
 <package >
   <metadata>
     <id>FTJFundChoice.AdvisoryWorldClient</id>
-    <version>1.0.1.0</version>
+    <version>1.0.2.0</version>
     <authors>Brian Bland, Brian Seabolt</authors>
     <owners>FTJ Fund Choice</owners>
     <licenseUrl>https://github.com/FTJFundChoice/AdvisoryWorldClient</licenseUrl>
     <projectUrl>https://github.com/FTJFundChoice/AdvisoryWorldClient</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The Unofficial AdvisoryWorld API C# Client</description>
-    <releaseNotes>Better error catching</releaseNotes>
+    <releaseNotes>Thumbnails need love too!</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>FTJ FundChoice AdvisoryWorld</tags>
     <dependencies>

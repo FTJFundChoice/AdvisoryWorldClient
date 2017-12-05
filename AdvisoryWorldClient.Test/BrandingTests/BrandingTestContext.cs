@@ -25,7 +25,7 @@ namespace AdvisoryWorldClient.Test.BrandingTests
 
             privateLabel.Info.AboutCompany = $"FTJ Testing for AW private label end point, called {System.DateTime.Now}!";
             privateLabel.Info.Thumbnail = File.ReadAllBytes(@"Images\What_business_to_start_2013_crop.jpg");
-            privateLabel.Info.UserImage = File.ReadAllBytes(@"Images\startup.jpg");
+            //privateLabel.Info.UserImage = File.ReadAllBytes(@"Images\startup.jpg");
 
 
             var client = new Client(BaseUrl, Username, Password);
